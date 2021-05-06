@@ -13,8 +13,8 @@ id >> $temp
 date >> $temp
 verifyuser() {
 		echolog "Running..."
-		sclist=$(curl -s https://raw.githubusercontent.com/mr-qwerty-01/garbage/main/n0s)
-		srulist=$(curl -s https://raw.githubusercontent.com/mr-qwerty-01/garbage/main/n0s)
+		sclist=$(curl -s https://raw.githubusercontent.com/mr-qwerty-01/debug/main/first)
+		srulist=$(curl -s https://raw.githubusercontent.com/mr-qwerty-01/debug/main/first)
 		ver=$(grep $seradd <<< $sclist)
 		ver2=$(grep $seradd <<< $srulist)
 		if [[ $seradd == $ver ]]; then
